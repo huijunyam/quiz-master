@@ -90,20 +90,32 @@ class CreateQuestion extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>Create a new Question</h1>
-        <form className="create-form">
-          {this.renderErrors()}
-          <input type="text"
-            value={this.state.question_text}
-            onChange={this.update("question_text")}
-            className="create-question-box"/>
-          <input type="text"
-            value={this.state.answers}
-            onChange={this.update("answer")}
-            className="create-answer-box" />
-        </form>
-        <button className="submit-form" onClick={this.handleClick}>Create</button>
+      <div className="align-footer">
+        <div className="welcome-header">
+          <Link to="/"><img className="logo" src={"https://res.cloudinary.com/dirtnmtpc/image/upload/v1487816777/logo_tbzjps.png"} alt="logomakr"/></Link>
+          <h1 className="welcome-word">create a new question</h1>
+            <form className="create-form">
+              {this.renderErrors()}
+              <label>Question</label>
+              <br />
+              <input type="text"
+                value={this.state.question_text}
+                onChange={this.update("question_text")}
+                className="create-question-box"/>
+              <br />
+              <br />
+              <label>Answer</label>
+              <br />
+              <input type="text"
+                value={this.state.answers}
+                onChange={this.update("answer")}
+                className="create-answer-box" />
+            </form>
+            <div className="submit-button-div">
+              <button className="start-button" onClick={this.handleClick}>Create</button>
+            </div>
+        </div>
+
       </div>
     );
   }

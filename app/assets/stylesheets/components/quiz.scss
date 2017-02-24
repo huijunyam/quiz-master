@@ -39,13 +39,16 @@
 input[type=text] {
   font-size: 20px;
   padding: 10px;
-  background: #8ce4fa;
-  width: 400px;
+  width: 720px;
   margin: 20px;
   margin-top: 0;
   border: none;
   border-bottom: 2px solid $darkest-blue;
   color: $darkest-blue;
+}
+
+.answer-box {
+  background: #8ce4fa;
 }
 
 input:focus,
@@ -119,4 +122,26 @@ button:focus {
   margin: 20px;
   text-align: center;
   margin-top: 200px;
+}
+
+//create question
+.create-form {
+  border: 5px solid $dark-blue;
+  width: 800px;
+  margin: 30px auto;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+label {
+  margin: 10px;
+  margin-left: 20px;
+  font-size: 30px;
+  font-family: $sans-serif;
+  color: $darkest-blue;
+}
+
+.submit-button-div {
+  margin: 100px auto 0 auto;
+  text-align: center;
 }
