@@ -62,8 +62,8 @@ button:focus {
   margin: 20px;
 }
 
-//right question
-.correct-container {
+//right question,wrong question
+.correct-container, .wrong-container {
   border: 10px solid $green;
   border-radius: 5px;
   width: 500px;
@@ -71,14 +71,22 @@ button:focus {
   text-align: center;
 }
 
-.correct-message {
+.wrong-container {
+  border: 10px solid $red;
+}
+
+.correct-message, .wrong-message {
   font-size: 40px;
   font-family: $sans-serif;
   color: $green;
   margin: 20px;
 }
 
-.next-button {
+.wrong-message {
+  color: $red;
+}
+
+.next-button, .back-button {
   width: 200px;
   margin: 20px;
   border: 1px solid $green;
@@ -89,7 +97,17 @@ button:focus {
   margin-bottom: 30px;
 }
 
+.back-button {
+  border: 1px solid $red;
+  background: $red;
+}
+
 .next-button:hover {
   background: #28ffa1;
   color: black;
+}
+
+.back-button:hover {
+  color: black;
+  background: #e69ba0;
 }

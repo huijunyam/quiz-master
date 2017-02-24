@@ -17,8 +17,10 @@ class Wrong extends React.Component {
       <div className="align-footer">
         <div className="welcome-header">
           <Link to="/"><img className="logo" src={"https://res.cloudinary.com/dirtnmtpc/image/upload/v1487816777/logo_tbzjps.png"} alt="logomakr"/></Link>
-          <h1 className="welcome-word">Please try again!!!</h1>
-          <button onClick={this.handleClick}>Back</button>
+          <div className="wrong-container">
+            <h1 className="wrong-message">Please try again!!!</h1>
+            <button className="back-button" onClick={this.handleClick}>Back</button>
+          </div>
         </div>
       </div>
     );
