@@ -1,10 +1,12 @@
-import { RECEIVE_QUESTION } from '../actions/question_actions';
+import { RECEIVE_QUESTIONS, RECEIVE_QUESTION } from '../actions/question_actions';
 
 const QuestionReducer = (state = {}, action) => {
   Object.freeze(state);
   switch (action.type) {
-    case RECEIVE_QUESTION:
-      return action.questionDetail;
+    case RECEIVE_QUESTIONS:
+      return action.questions;
+    // case RECEIVE_QUESTION:
+    //   return action.questionDetail;
     default:
       return state;
   }
