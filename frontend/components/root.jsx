@@ -4,7 +4,6 @@ import { Router, Route, IndexRoute, IndexRedirect, hashHistory } from 'react-rou
 
 import App from './app/app';
 import WelcomeContainer from './welcome/welcome_container';
-import QuestionList from './question/question_list';
 
 const Root = ({ store }) => {
   return(
