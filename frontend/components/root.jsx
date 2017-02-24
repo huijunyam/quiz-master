@@ -11,6 +11,7 @@ import QuestionContainer from './question/question_container';
 import SuccessContainer from './success/success_container';
 import RightContainer from './answer/right_container';
 import WrongContainer from './answer/wrong_container';
+import UpdateQuestionContainer from './edit/update_question_container';
 
 const Root = ({ store }) => {
   return(
@@ -20,6 +21,7 @@ const Root = ({ store }) => {
           <IndexRoute component={WelcomeContainer} />
           <Route path="/create" component={CreateQuestionFormContainer} />
           <Route path="/edit" component={EditQuestionContainer} />
+          <Route path="/quiz/:quizId/update" component={UpdateQuestionContainer} />
           <Route path="/quiz" component={QuizContainer} />
           <Route path="/quiz/:quizId" component={QuestionContainer} />
           <Route path="/quiz/:quizId/right" component={RightContainer} />

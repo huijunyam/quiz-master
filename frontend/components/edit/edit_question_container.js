@@ -1,15 +1,15 @@
 import { connect } from 'react-redux';
 import EditQuestion from './edit_question';
-import { createQuestion, clearError, sendError } from '../../actions/question_actions';
+import { fetchQuestions, deleteQuestion } from '../../actions/question_actions';
 
 const mapStateToProps = state => ({
-  errors: state.errors
+  errors: state.errors,
+  questions: Object.keys(state.questions).map(id => state.questions[id])
 });
 
 const mapDispatchToProps = dispatch => ({
-  createQuestion: (question) => dispatch(createQuestion(question)),
-  clearError: () => dispatch(clearError()),
-  sendError: (error) => dispatch(sendError(error))
+  fetchQuestions: () => dispatch(fetchQuestions()),
+  deleteQuestion: (id) => dispatch(deleteQuestion(id)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(CreateQuestion);
+export default connect(mapStateToProps, mapDispatchToProps)(EditQuestion);
