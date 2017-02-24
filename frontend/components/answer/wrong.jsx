@@ -9,7 +9,7 @@ class Wrong extends React.Component {
 
   handleClick(e) {
     e.preventDefault();
-    this.props.router.push(`/quiz/${this.quizId}`);
+    this.props.router.push(`/quiz/${this.props.quizId}`);
   }
 
   render() {
