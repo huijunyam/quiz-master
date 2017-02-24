@@ -10,7 +10,8 @@ class Api::QuestionsController < ApplicationController
   end
 
   def create
-    @question = Question.new(question_params)
+    @question = Question.create("question_text" => params["question"]["question_text"],
+    "answers" => params["question"]["answers"])
     if @question.save
       render "api/questions/show"
     else
@@ -24,10 +25,4 @@ class Api::QuestionsController < ApplicationController
     render json: {}
   end
 
-  private
-  def question_params
-    params.require(:question).permit(
-      :question_text, :answers
-    )
-  end
 end

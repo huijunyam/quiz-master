@@ -1,5 +1,5 @@
 import {
-  RECEIVE_ERROR, CLEAR_ERROR
+  RECEIVE_ERROR, CLEAR_ERROR, SEND_ERROR
 } from '../actions/question_actions';
 
 const ErrorReducer = (state = [], action) => {
@@ -9,6 +9,8 @@ const ErrorReducer = (state = [], action) => {
       return action.error;
     case CLEAR_ERROR:
       return null;
+    case SEND_ERROR:
+      return action.error;
     default:
       return state;
   }

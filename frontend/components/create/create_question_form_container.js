@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import CreateQuestion from './create_question';
-import { createQuestion, clearError } from '../../actions/question_actions';
+import { createQuestion, clearError, sendError } from '../../actions/question_actions';
 
 const mapStateToProps = state => ({
   errors: state.errors
@@ -8,7 +8,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   createQuestion: (question) => dispatch(createQuestion(question)),
-  clearError: () => dispatch(clearError())
+  clearError: () => dispatch(clearError()),
+  sendError: (error) => dispatch(sendError(error))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CreateQuestion);
