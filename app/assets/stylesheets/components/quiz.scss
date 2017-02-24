@@ -145,3 +145,15 @@ label {
   margin: 100px auto 0 auto;
   text-align: center;
 }
+
+.form-error {
+  padding-bottom: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-family: $sans-serif;
+  color: red;
+}
+
+.error-form {
+  padding: 5px;
+}
