@@ -157,3 +157,49 @@ label {
 .error-form {
   padding: 5px;
 }
+
+//question list
+.question-list {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  margin: 50px auto;
+}
+
+.question {
+  margin: 10px;
+}
+
+.question-div {
+  display: flex;
+  justify-content: space-between;
+  background: $lightest-blue;
+  border-radius: 5px;
+}
+
+.question-text {
+  font-size: 20px;
+  font-family: $sans-serif;
+  color: $darkest-blue;
+}
+
+.button-div {
+  margin: 10px;
+  display: flex;
+}
+
+.question-list-button {
+  background: $lightest-blue;
+  border-radius: 5px;
+  border: 1px solid $lightest-blue;
+}
+
+.question-list-button:hover {
+  border: 1px solid $dark-blue;
+  background: $dark-blue;
+}
+
+.question-list-img {
+  width: 25px;
+  height: 25px;
+}

@@ -13,9 +13,10 @@ class EditQuestion extends React.Component {
 
   render() {
     return (
-      <div>
-        <div>
-          <ul>
+      <div className="align-footer">
+        <div className="welcome-header">
+          <Link to="/"><img className="logo" src={"https://res.cloudinary.com/dirtnmtpc/image/upload/v1487816777/logo_tbzjps.png"} alt="logomakr"/></Link>
+          <ul className="question-list">
             {this.props.questions.map(question => (<QuestionItem key={question.id}
               question={question} deleteQuestion={this.props.deleteQuestion} />))}
           </ul>

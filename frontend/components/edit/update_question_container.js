@@ -5,7 +5,7 @@ import { fetchQuestion, deleteQuestion, updateQuestion, clearError, sendError } 
 const mapStateToProps = (state, ownProps) => ({
   quizId: parseInt(ownProps.params.quizId),
   errors: state.errors,
-  questions: Object.keys(state.questions).map(id => state.questions[id])
+  questionDetail: state.questionDetail
 });
 
 const mapDispatchToProps = dispatch => ({

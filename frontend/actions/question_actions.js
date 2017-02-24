@@ -18,9 +18,9 @@ export const receiveQuestion = questionDetail => ({
   questionDetail
 });
 
-export const removeQuestion = question => ({
+export const removeQuestion = questionId => ({
   type: REMOVE_QUESTION,
-  question
+  questionId
 });
 
 export const clearQuestion = () => ({
@@ -60,6 +60,5 @@ export const updateQuestion = question => dispatch => (
 );
 
 export const deleteQuestion = id => dispatch => (
-  QuestionAPIUtil.deleteQuestion(id)
-    .then(questions => dispatch(receiveQuestions(questions)))
+  QuestionAPIUtil.deleteQuestion(id).then((id) => dispatch(removeQuestion(id)))
 );
