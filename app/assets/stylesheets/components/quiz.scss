@@ -10,3 +10,54 @@
   color: $white;
   font-size: 20px;
 }
+
+//question
+.question-container {
+  background: #8ce4fa;
+  border-radius: 5px;
+  width: 800px;
+  margin: 100px auto;
+}
+
+.question-header, .question-text {
+  font-size: 30px;
+  font-family: $sans-serif;
+  margin: 10px;
+  padding: 10px;
+}
+
+.question-header {
+  margin-top: 20px;
+  color: $darkest-blue;
+}
+
+.question-text {
+  font-size: 25px;
+  color: $dark-blue;
+}
+
+input[type=text] {
+  font-size: 20px;
+  padding: 10px;
+  background: #8ce4fa;
+  width: 400px;
+  margin: 20px;
+  margin-top: 0;
+  border: none;
+  border-bottom: 2px solid $darkest-blue;
+  color: $darkest-blue;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.submit-answer {
+  background: $dark-blue;
+  color: $white;
+  border-radius: 5px;
+  margin: 20px;
+}
