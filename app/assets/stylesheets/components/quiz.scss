@@ -61,3 +61,35 @@ button:focus {
   border-radius: 5px;
   margin: 20px;
 }
+
+//right question
+.correct-container {
+  border: 10px solid $green;
+  border-radius: 5px;
+  width: 500px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.correct-message {
+  font-size: 40px;
+  font-family: $sans-serif;
+  color: $green;
+  margin: 20px;
+}
+
+.next-button {
+  width: 200px;
+  margin: 20px;
+  border: 1px solid $green;
+  background: $green;
+  border-radius: 5px;
+  color: black;
+  font-family: $sans-serif;
+  margin-bottom: 30px;
+}
+
+.next-button:hover {
+  background: #28ffa1;
+  color: black;
+}

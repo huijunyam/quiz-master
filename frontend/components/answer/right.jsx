@@ -25,8 +25,10 @@ class Right extends React.Component {
       <div className="align-footer">
         <div className="welcome-header">
           <Link to="/"><img className="logo" src={"https://res.cloudinary.com/dirtnmtpc/image/upload/v1487816777/logo_tbzjps.png"} alt="logomakr"/></Link>
-          <h1 className="welcome-word">Correct!!!</h1>
-          <button onClick={this.handleClick}>Next</button>
+          <div className="correct-container">
+            <h1 className="correct-message">You got it right!!!</h1>
+            <button className="next-button" onClick={this.handleClick}>Next</button>
+          </div>
         </div>
       </div>
     );
