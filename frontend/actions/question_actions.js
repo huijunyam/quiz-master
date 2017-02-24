@@ -5,6 +5,7 @@ export const RECEIVE_QUESTION = "RECEIVE_QUESTION";
 export const REMOVE_QUESTION = "REMOVE_QUESTION";
 export const CLEAR_ERROR = "CLEAR_ERROR";
 export const RECEIVE_ERROR = "RECEIVE_ERROR";
+export const CLEAR_QUESTION = "CLEAR_QUESTION";
 
 export const receiveQuestions = questions => ({
   type: RECEIVE_QUESTIONS,
@@ -19,6 +20,10 @@ export const receiveQuestion = questionDetail => ({
 export const removeQuestion = question => ({
   type: REMOVE_QUESTION,
   question
+});
+
+export const clearQuestion = () => ({
+  type: CLEAR_QUESTION
 });
 
 export const clearError = () => ({

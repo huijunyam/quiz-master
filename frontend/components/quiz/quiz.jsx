@@ -21,7 +21,7 @@ class Quiz extends React.Component {
     return (
       <div className="align-footer">
         <div className="welcome-header">
-          <img className="logo" src="https://res.cloudinary.com/dirtnmtpc/image/upload/v1487816777/logo_tbzjps.png"></img>
+          <Link to="/"><img className="logo" src={"https://res.cloudinary.com/dirtnmtpc/image/upload/v1487816777/logo_tbzjps.png"} alt="logomakr"/></Link>
           <h1 className="welcome-word">Click the button below to start the quiz</h1>
           <h1 className="welcome-word">Good Luck!!!</h1>
           <div className="start-button-div">
