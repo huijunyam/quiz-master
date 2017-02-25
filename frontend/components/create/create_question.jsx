@@ -47,6 +47,8 @@ class CreateQuestion extends React.Component {
     } else {
       let word = numbersToWords.toWords(parseInt(answers[0]));
       answers.push(word);
+      word = word.split("-").join(" ");
+      answers.push(word);
     }
     return answers;
   }

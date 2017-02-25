@@ -21,6 +21,7 @@ class Api::QuestionsController < ApplicationController
 
   def update
     @question = Question.find(params[:id])
+    # debugger
     if @question.update("question_text" => params["question"]["question_text"],
     "answers" => params["question"]["answers"])
       render :show

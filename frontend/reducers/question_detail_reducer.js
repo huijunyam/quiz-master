@@ -10,6 +10,7 @@ const QuestionDetailReducer = (state = defaultState, action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_QUESTION:
+    // debugger
       return action.questionDetail;
     case CLEAR_QUESTION:
       return defaultState;
