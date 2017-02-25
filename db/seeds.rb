@@ -7,10 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 question1 = Question.create("question_text":"How many vowels are there in the English alphabet?", "answers":["5", "five"])
-question2 = Question.create("question_text":"How many letters are there in the English alphabet?", "answers":["26", "twenty six"])
-question3 = Question.create("question_text":"How many consonants are there in the English alphabet?", "answers":["21", "twenty one"])
+question2 = Question.create("question_text":"How many letters are there in the English alphabet?", "answers":["26", "twenty-six", "twenty six"])
+question3 = Question.create("question_text":"How many consonants are there in the English alphabet?", "answers":["21", "twenty-one", "twenty one"])
 question4 = Question.create("question_text":"What is the result of 1 + 5?", "answers":["6", "six"])
 question5 = Question.create("question_text":"What is the result of 5 x 3?", "answers":["15", "fifteen"])
 question6 = Question.create("question_text":"What is the result of 3 + 6?", "answers":["9", "nine"])
-question7 = Question.create("question_text":"What is the result of 4 x 12?", "answers":["48", "forty eight"])
+question7 = Question.create("question_text":"What is the result of 4 x 12?", "answers":["48", "forth-eight", "forty eight"])
 question8 = Question.create("question_text":"What is the result of 10 + 4?", "answers":["14", "fourteen"])
