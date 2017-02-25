@@ -1,6 +1,6 @@
 #Quiz Master
 
-Quiz Master utilizes Ruby on Rails on the backend, a PostgreSQL database, and React.js with a Redux architectural framework on the frontend.
+Quiz Master utilizes Ruby on Rails on the backend, a PostgreSQL database, and React.js with a Redux architectural framework on the frontend. The web application is deployed to Heroku
 
 [Quiz Master](https://quizmaster1.herokuapp.com/#/)
 
