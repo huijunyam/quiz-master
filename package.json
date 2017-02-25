@@ -29,7 +29,10 @@
     "words-to-numbers": "^1.1.2"
   },
   "engines": {
-    "node": "6.2.1",
-    "npm": "3.9.3"
+    "node": "4.1.1",
+    "npm": "2.1.x"
+  },
+  "scripts": {
+    "postinstall": "webpack"
   }
 }
